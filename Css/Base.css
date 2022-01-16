@@ -1,0 +1,41 @@
+.changeBackgroundColor:hover{
+    background-color: #ccc;
+    border-radius: 50px;
+}
+.gachphancach::after{
+    display:block;
+    content: "";
+    width: 1px;
+    height: 35px;
+    background-color: #ccc;
+    top: 25% ;
+    right: 0;
+    position:absolute;
+}
+.changeColor{
+    color: #ccc;
+    border: 2px solid #ccc;
+}
+.changbackground{
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+@keyframes modalShow {
+    from {
+        top:-200px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes appear{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

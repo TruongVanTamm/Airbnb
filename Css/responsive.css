@@ -1,0 +1,482 @@
+
+
+    @media (min-width: 1240px) {
+        .header-wrap{
+            width: 1450px;
+        }
+        .Add-guest-box{
+           width: 40%;
+        }
+        .Add-guest-wrap{
+            margin-left:40px;
+        }
+        .flex-search{
+            max-width: 1450px;
+            margin: 0px auto;
+        }
+        .flex-serach-box{
+            width: 40% ;
+        }
+        .User-form{
+            width: 80%;
+        }
+        .nav-mobile{
+            display:none;
+        }
+        .scheduled,.experience{
+            width: 70%;
+        }
+        .swiper-slide-modify{
+            display:none !important;
+        }
+        .inspiration-main.l-6{
+            flex: 0 0 25% ;
+            max-width: 25% ;
+        }
+        .inspiration-main-modify{
+            display: block !important;
+        }
+        .header-mobile{
+            display: none;
+        }
+    }
+    /* -----------------Tablet pro---------------------------------- */
+    @media (min-width: 1024px) and (max-width: 1239px) {
+        .header-wrap{
+            width: 984px;
+        }
+        .logo{
+            display: none;
+        }
+        .logo-2{
+            display: block;
+        }
+        .scheduled,.experience{
+            width: 800px;
+        }
+        .modal__inner-1{
+            top:15%;
+            left: 5%;
+            width: 90%;
+            height: 70vh;          
+        }
+        .modal__inner-2{
+            top:22%;
+            left: 22%;
+            width: 56%;
+            height: 56vh;  
+        }
+        .nav-mobile{
+            display:none;
+        }
+        .inspiration-header{
+            font-size:20px;
+        }
+        .inspiration-wrap{
+            height: 300px;
+        }
+        .inspiration-location{
+            font-size:25px;
+            padding:10px 15px;
+            line-height: 35px;
+            height: 70px;
+        }
+        .inspiration-distance{
+            font-size:25px;
+            padding: 20px;
+        }
+        .header-mobile{
+            display: none;
+        }
+        .swiper-wrapper {         
+            gap: 24px;      
+        }
+        .experiences-main{
+            height: 550px;         
+        }
+        .experiences-main h2{
+            font-size:30px;
+            line-height:30px;
+            margin-bottom: 20px;
+        }
+    }
+     /* -----------------Tablet---------------------------------- */
+    @media (min-width: 740px) and (max-width: 1023px) {
+        .header-wrap{
+            width: 644px;
+            height: 100%;
+        }
+        .header{
+            padding-top:20px
+        }
+        .logo{
+            display: none;
+        }
+        .logo-2{
+            display: block;
+        }
+        .scheduled,.experience{
+            width: 700px;
+        }
+        .Sub-search{
+            transform: translateX(-10px);
+        }
+        .nav {
+            order:3;
+            padding: 20px 0;
+            justify-content: center;
+            gap: 20px;
+        }
+        .modal__inner-1{
+            top:5%;
+            left: 5%;
+            width: 90%;
+            height: 90vh;          
+        }
+        .modal__inner-2{
+            top: 13%;
+            left: 14%;
+            width: 72%;
+            height: 74vh; 
+        }
+        .Add-guest-box{
+            width: 60%;         
+        }
+        .nav-mobile{
+            display:none;
+        }        
+        .Auto-translate{
+            width: 80%;
+        }
+        .inspiration-header{
+            font-size:16px;
+            line-height:32px;
+        }
+        .inspiration-wrap{
+            height: 500px !important;
+        }
+        .swiper-button-next, .swiper-rtl .swiper-button-prev {
+            right: 6px;
+            left: auto;
+            top: 200px !important;
+        }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next {
+            left: auto !important;
+            right: 80px !important;
+            top: 200px !important;
+        }
+        .inspiration-header{
+            font-size:16px;
+        }
+        .header-mobile{
+            display: none;
+        }
+        .experiences-header{
+            font-size:20px;
+            padding: 80px 0 50px 0;
+            line-height:20px;
+        }
+        .experiences-main{
+            height: 400px;     
+            padding: 30px 20px;    
+        }
+        .experiences-main h2{
+            font-size:25px;
+            line-height:25px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .experiences-main button{
+            padding: 16px 20px;
+            margin-top: 120px;
+        }
+        .footer-list-wrap{
+            padding-bottom: 10px;
+        }
+        .footer-list-wrap.row {
+            flex-direction: column;
+        }
+        .footer-list{
+            border-bottom: 2px solid #ccc;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer-item{
+            width: 30%;
+        }
+        .footer-list-header{
+            margin:20px 0 10px 0;
+        }
+        .footer-main:last-child .footer-list{
+            border: none ;
+        }
+        .footer-option-wrap{
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        .footer-policy-wrap{
+            flex-direction: column;
+        }
+    }
+    /* ----------------------Small-tablet-------------------------------------------------- */
+    @media (min-width: 377px) and (max-width: 739px) {
+        .start-container {
+            display: none !important;
+        }
+        .flex-search-content,.flex-search{
+            margin-top:0;
+        }
+        .header-mobile{
+            padding:20px
+        }
+        .header-btn-moblie {
+            display: block !important;
+            margin: 0 auto;
+            width:90%;
+            padding: 14px 0;
+        }
+        .flex-search-content{
+            font-size:25px;
+            font-weight: bold;
+            gap: 15px;
+        }
+        .flex-search-content p{
+          height: 40px;
+          line-height: 40px;
+        }
+        .modal{
+            height: 100%;
+            animation: none;
+        }
+        .modal__inner-2{
+            top: 0;
+            left: 0;
+            padding-top:20px ;
+            border-radius:0px;       
+            width: 100%;
+            height: 100%; 
+        }
+        .modal-login-regist {
+            padding-top: 0
+        }
+        .modal-icon-close-2 {
+            display: none;
+        }
+        .modal-login-regist__body{
+            padding: 20px;
+        }
+        .nav-mobile{
+            display:flex ;
+        }
+        .modal__inner-1{
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100vh;  
+            border-radius: 0px;        
+        }
+        .Auto-translate{
+            width: 100%;
+        }
+        .Language-header{
+            margin-bottom:10px;
+            font-size: 12px;
+        }
+        .inspiration-header{
+            font-size:10px;
+            padding: 60px 5px 20px 8px;
+            width: 80%;
+            line-height: 20px;
+        }
+        .swiper-button-next, .swiper-rtl .swiper-button-prev {
+            right: 6px;
+            left: auto;
+            top: 74px !important;
+        
+        }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next {
+            left: auto !important;
+            right: 44px !important;
+            top: 74px !important;
+        }
+        .inspiration-wrap{
+            height: 250px !important;         
+        }
+        .inspiration-location{
+            font-size:14px;
+            padding:15px 5px;
+            height: 20px;
+        }
+        .inspiration-distance{
+            font-size:14px;
+            padding:15px 5px;
+        }
+        .experiences-header{
+            font-size:10px;
+            padding: 40px 10px 0 10px;
+            line-height:32px;
+        }
+        .experiences-main{
+            height: 500px;     
+            padding: 30px 20px;    
+        }
+        .experiences-main h2{
+            font-size:25px;
+            line-height:25px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .experiences-main button{
+            padding: 16px 20px;
+            margin-top: 180px;
+        }
+        .experiences-main-big h2{
+            font-size:30px;
+            line-height:25px;
+            margin-top: 80px;
+            width: 100%;
+        }
+    }
+    /* ----------------------------------------------------Mobile------------------------------ */
+    @media (max-width: 420px){
+        .start-container {
+            display: none !important;
+        }
+        .flex-search-content,.flex-search{
+            margin-top:0;
+        }
+        .header-mobile{
+            padding:20px
+        }
+        .header-btn-moblie {
+            display: block !important;
+            margin: 0 auto;
+            width:90%;
+            padding: 14px 0;
+        }
+        .flex-search-content{
+            font-size:25px;
+            font-weight: bold;
+            gap: 15px;
+        }
+        .flex-search-content p{
+          height: 40px;
+          line-height: 40px;
+        }
+        .modal{
+            height: 100%;
+            animation: none;
+        }
+        .modal__inner-2{
+            top: 0;
+            left: 0;
+            padding-top:20px ;
+            border-radius:0px;       
+            width: 100%;
+            height: 100%; 
+        }
+        .modal-login-regist {
+            padding-top: 0
+        }
+        .modal-icon-close-2 {
+            display: none;
+        }
+        .modal-login-regist__body{
+            padding: 20px;
+        }
+        .nav-mobile{
+            display:flex ;
+        }
+        .modal__inner-1{
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100vh;  
+            border-radius: 0px;        
+        }
+        .Auto-translate{
+            width: 100%;
+        }
+        .Language-header{
+            margin-bottom:10px;
+            font-size: 12px;
+        }
+        .swiper-button-next, .swiper-rtl .swiper-button-prev {
+            right: 6px;
+            left: auto;
+            top: 84px !important;
+        
+        }
+        .swiper-button-prev, .swiper-rtl .swiper-button-next {
+            left: auto !important;
+            right: 44px !important;
+            top: 84px !important;
+        }
+        .inspiration-header{
+            font-size:10px;
+            padding: 60px 5px 20px 10px;
+            width: 80%;
+            line-height: 20px;
+        }
+        .inspiration-wrap{
+            height: 250px !important;        
+        }
+        .inspiration-location{
+            font-size:14px;
+            padding:15px 5px;
+            height: 20px;
+        }
+        .inspiration-distance{
+            font-size:14px;
+            padding:15px 5px;
+        }
+        .experiences-header{
+            font-size:10px;
+            padding: 40px 10px 0 10px;
+            line-height:32px;
+        }
+        .experiences-main{
+            height: 500px;     
+            padding: 30px 20px;    
+        }
+        .experiences-main h2{
+            font-size:25px;
+            line-height:25px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .experiences-main button{
+            padding: 16px 20px;
+            margin-top: 180px;
+        }
+        .experiences-main-big h2{
+            font-size:30px;
+            line-height:25px;
+            margin-top: 80px;
+            width: 100%;
+        } 
+         .footer-list{
+            border-bottom: 2px solid #ccc;
+        }
+        .footer-list-wrap{
+            padding-bottom: 10px;
+        }
+       .footer-main{
+           width: 100%;
+           margin: 0 30px;
+       }
+        .footer-list-header{
+            margin:20px 0 10px 0;
+        }
+        .footer-main:last-child .footer-list{
+            border: none ;
+        }
+        .footer-option-wrap{
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        .footer-policy-wrap{
+            flex-direction: column;
+        }
+    }
