@@ -1,423 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>AriBnB</title>
-    <script src="https://kit.fontawesome.com/3382d2d846.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./Css/main.css">
-    <link rel="stylesheet" href="./Css/Base.css">
-    <link rel="stylesheet" href="./Css/responsive.css">
-    <link rel="stylesheet" href="./Css/gridSystem.css">
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />
+    <script src="https://kit.fontawesome.com/3382d2d846.js"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+          href="./Css/main.css">
+    <link rel="stylesheet"
+          href="./Css/Base.css">
+    <link rel="stylesheet"
+          href="./Css/responsive.css">
+    <link rel="stylesheet"
+          href="./Css/gridSystem.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
+
 <body>
     <div class="container">
         <div class="start-container">
-        <div class="grid wide">
-            <div class="header row no-gutter" id="header">
-                <div class="header-wrap row ">
-                <a  href="https://www.airbnb.com.vn/"  class="logo col l-2 m-1 c-0">
-                    <svg width="102" height="32" fill="currentcolor" style="display:block"><path d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h2.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 
-                        0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z"></path></svg>
-                </a>
-                <a  href="https://www.airbnb.com.vn/"  class="logo-2 col l-2 m-1 c-0">
-                    <svg width="30" height="32" fill="currentcolor" style="display: block;"><path d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z"></path></svg>
-                </a>
-                <ul class="nav col l-o-1 l-5 m-12 c-0">
-                    <li class="nav-item">Nơi ở</li>
-                    <li class="nav-item">Trải Nghiệm</li>
-                    <li class="nav-item">Trải Nghiệm Trực Tuyến</li>
-                </ul>
-                <button class="header-btn hide l-3 m-4">
-                    <span>Bắt đầu tìm kiếm</span>
-                    <i class="fas fa-search"></i>
-                </button>
-                <div class="header-option col l-3 m-7 c-0">
-                    <a href="#" class="become-a-host "><div class="become-a-host-text">Trở thành chủ nhà</div></a>
-                    <button class="region-and-coin"><i class="fas fa-globe region-and-coin__icon"></i> </button>
-                    <div class="User ">
-                        <i class="fas fa-list user-icon"></i>
-                        <i class="fas fa-user-circle user-icon"></i>
-                    </div>
-                    <div class="User-form hide">
-                        <ul class="User-form-list">
-                            <li class="User-form-item login-regist-active">
-                                Đăng kí
-                            </li>
-                            <li class="User-form-item login-regist-active">
-                                Đăng nhập
-                            </li>
-                            <li class="User-form-item">
-                                Cho thuê nhà
-                            </li>
-                            <li class="User-form-item">
-                                Tổ chức trải nghiệm
-                            </li>
-                            <li class="User-form-item">
-                                Trợ giúp
-                            </li>
+            <div class="grid wide">
+                <div class="header row no-gutter"
+                     id="header">
+                    <div class="header-wrap row ">
+                        <a href="https://www.airbnb.com.vn/"
+                           class="logo col l-2 m-1 c-0">
+                            <svg width="102"
+                                 height="32"
+                                 fill="currentcolor"
+                                 style="display:block">
+                                <path
+                                      d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5zM41.54 24.12a5.02 5.02 0 01-3.95-1.83 6.55 6.55 0 01-1.6-4.48 6.96 6.96 0 011.66-4.58 5.3 5.3 0 014.08-1.86 4.3 4.3 0 013.7 1.92l.1-1.57h2.92V23.8h-2.93l-.1-1.76a4.52 4.52 0 01-3.88 2.08zm.76-2.88c.58 0 1.09-.16 1.57-.45.44-.32.8-.74 1.08-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 0 00-3.12 0c-.44.32-.8.74-1.08 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.55.45zM53.45 8.46c0 .35-.06.67-.22.93-.16.25-.38.48-.67.64-.29.16-.6.22-.92.22-.32 0-.64-.06-.93-.22a1.84 1.84 0 01-.67-.64 1.82 1.82 0 01-.22-.93c0-.36.07-.68.22-.93.16-.3.39-.48.67-.64.29-.16.6-.23.93-.23a1.84 1.84 0 011.6.86 2 2 0 01.21.94zm-3.4 15.3V11.7h2.18v12.08h-3.19zm11.68-8.9v.04c-.15-.07-.35-.1-.5-.13-.2-.04-.36-.04-.55-.04-.89 0-1.56.26-2 .8-.48.55-.7 1.32-.7 2.31v5.93h-3.19V11.69h2.93l.1 1.83c.32-.64.7-1.12 1.24-1.48a3.1 3.1 0 011.81-.5c.23 0 .45.02.64.06.1.03.16.03.22.06v3.2zm1.28 8.9V6.74h3.18v6.5c.45-.58.96-1.03 1.6-1.38a5.02 5.02 0 016.08 1.31 6.55 6.55 0 011.6 4.49 6.96 6.96 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.1 1.57-2.92.03zm6.15-2.52c.57 0 1.08-.16 1.56-.45.44-.32.8-.74 1.08-1.25.26-.51.38-1.12.38-1.8 0-.67-.12-1.28-.38-1.79a3.75 3.75 0 00-1.08-1.25 2.95 2.95 0 00-3.12 0c-.45.32-.8.74-1.09 1.25a4.01 4.01 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.98.45 1.56.45zm7.51 2.53V11.69h2.93l.1 1.57a3.96 3.96 0 013.54-1.89 4.1 4.1 0 013.82 2.44c.35.76.54 1.7.54 2.75v7.24h-3.19v-6.82c0-.84-.19-1.5-.57-1.99-.38-.48-.9-.74-1.56-.74-.48 0-.9.1-1.27.32-.35.23-.64.52-.86.93a2.7 2.7 0 00-.32 1.35v6.92h-3.16zm12.52 0V6.73h3.19v6.5a4.67 4.67 0 013.73-1.89 5.02 5.02 0 013.95 1.83 6.57 6.57 0 011.59 4.48 6.95 6.95 0 01-1.66 4.58 5.3 5.3 0 01-4.08 1.86 4.3 4.3 0 01-3.7-1.92l-.09 1.57-2.93.03zm6.18-2.53c.58 0 1.09-.16 1.56-.45.45-.32.8-.74 1.09-1.25.25-.51.38-1.12.38-1.8a3.42 3.42 0 00-1.47-3.04 2.95 2.95 
+                        0 00-3.12 0c-.44.32-.8.74-1.08 1.25a3.63 3.63 0 00-.38 1.8 3.42 3.42 0 001.47 3.04c.47.29.95.45 1.55.45z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.airbnb.com.vn/"
+                           class="logo-2 col l-2 m-1 c-0">
+                            <svg width="30"
+                                 height="32"
+                                 fill="currentcolor"
+                                 style="display: block;">
+                                <path
+                                      d="M29.24 22.68c-.16-.39-.31-.8-.47-1.15l-.74-1.67-.03-.03c-2.2-4.8-4.55-9.68-7.04-14.48l-.1-.2c-.25-.47-.5-.99-.76-1.47-.32-.57-.63-1.18-1.14-1.76a5.3 5.3 0 00-8.2 0c-.47.58-.82 1.19-1.14 1.76-.25.52-.5 1.03-.76 1.5l-.1.2c-2.45 4.8-4.84 9.68-7.04 14.48l-.06.06c-.22.52-.48 1.06-.73 1.64-.16.35-.32.73-.48 1.15a6.8 6.8 0 007.2 9.23 8.38 8.38 0 003.18-1.1c1.3-.73 2.55-1.79 3.95-3.32 1.4 1.53 2.68 2.59 3.95 3.33A8.38 8.38 0 0022.75 32a6.79 6.79 0 006.75-5.83 5.94 5.94 0 00-.26-3.5zm-14.36 1.66c-1.72-2.2-2.84-4.22-3.22-5.95a5.2 5.2 0 01-.1-1.96c.07-.51.26-.96.52-1.34.6-.87 1.65-1.41 2.8-1.41a3.3 3.3 0 012.8 1.4c.26.4.45.84.51 1.35.1.58.06 1.25-.1 1.96-.38 1.7-1.5 3.74-3.21 5.95zm12.74 1.48a4.76 4.76 0 01-2.9 3.75c-.76.32-1.6.41-2.42.32-.8-.1-1.6-.36-2.42-.84a15.64 15.64 0 01-3.63-3.1c2.1-2.6 3.37-4.97 3.85-7.08.23-1 .26-1.9.16-2.73a5.53 5.53 0 00-.86-2.2 5.36 5.36 0 00-4.49-2.28c-1.85 0-3.5.86-4.5 2.27a5.18 5.18 0 00-.85 2.21c-.13.84-.1 1.77.16 2.73.48 2.11 1.78 4.51 3.85 7.1a14.33 14.33 0 01-3.63 3.12c-.83.48-1.62.73-2.42.83a4.76 4.76 0 01-5.32-4.07c-.1-.8-.03-1.6.29-2.5.1-.32.25-.64.41-1.02.22-.52.48-1.06.73-1.6l.04-.07c2.16-4.77 4.52-9.64 6.97-14.41l.1-.2c.25-.48.5-.99.76-1.47.26-.51.54-1 .9-1.4a3.32 3.32 0 015.09 0c.35.4.64.89.9 1.4.25.48.5 1 .76 1.47l.1.2c2.44 4.77 4.8 9.64 7 14.41l.03.03c.26.52.48 1.1.73 1.6.16.39.32.7.42 1.03.19.9.29 1.7.19 2.5z">
+                                </path>
+                            </svg>
+                        </a>
+                        <ul class="nav col l-o-1 l-5 m-12 c-0">
+                            <li class="nav-item">Nơi ở</li>
+                            <li class="nav-item">Trải Nghiệm</li>
+                            <li class="nav-item">Trải Nghiệm Trực Tuyến</li>
                         </ul>
+                        <button class="header-btn hide l-3 m-4">
+                            <span>Bắt đầu tìm kiếm</span>
+                            <i class="fas fa-search"></i>
+                        </button>
+                        <div class="header-option col l-3 m-7 c-0">
+                            <a href="#"
+                               class="become-a-host ">
+                                <div class="become-a-host-text">Trở thành chủ nhà</div>
+                            </a>
+                            <button class="region-and-coin"><i class="fas fa-globe region-and-coin__icon"></i> </button>
+                            <div class="User ">
+                                <i class="fas fa-list user-icon"></i>
+                                <i class="fas fa-user-circle user-icon"></i>
+                            </div>
+                            <div class="User-form hide">
+                                <ul class="User-form-list">
+                                    <li class="User-form-item login-regist-active">
+                                        Đăng kí
+                                    </li>
+                                    <li class="User-form-item login-regist-active">
+                                        Đăng nhập
+                                    </li>
+                                    <li class="User-form-item">
+                                        Cho thuê nhà
+                                    </li>
+                                    <li class="User-form-item">
+                                        Tổ chức trải nghiệm
+                                    </li>
+                                    <li class="User-form-item">
+                                        Trợ giúp
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scheduled row c-0">
+                        <div class="search-location changeBackgroundColor gachphancach col l-4 m-4">
+                            <label for=""><strong>Địa điểm</strong></label>
+                            <br>
+                            <input type="text"
+                                   placeholder="Bạn sắp đi đâu ?"
+                                   class="location-input">
+                        </div>
+                        <div class="flex-serach-box hide">
+                            <h4>Mọi lúc, mọi nơi</h4>
+                            <button class="flex-serach-btn">
+                                <span>Tìm kiếm linh hoạt</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="Check-in changeBackgroundColor gachphancach col l-2 m-2">
+                            <p><Strong>Nhận phòng</Strong></p>
+                            <p class="Check-text">Thêm ngày</p>
+                        </div>
+                        <div class="Check-out changeBackgroundColor gachphancach col l-2 m-2">
+                            <p><strong>Trả phòng</strong></p>
+                            <p class="Check-text">Thêm ngày</p>
+                        </div>
+                        <div class="Add-guest changeBackgroundColor col l-4 m-4">
+                            <div class="Add-guest-wrap">
+                                <p><strong>Khách</strong></p>
+                                <i class="far fa-times-circle guest-text-icon hide"></i>
+                                <div class="Add-guest-text-wrap">
+                                    <span class="Add-guest-text Check-text">Thêm khách</span>
+                                    <span class="adult"></span>
+                                    <span class="child"></span>
+                                    <span class="baby"></span>
+                                    <span class="add-pet"></span>
+                                </div>
+                            </div>
+                            <div class="Sub-search">
+                                <button>
+                                    <i class="fas fa-search Sub-search-icon ">
+                                    </i>
+                                </button>
+                                <div class="Sub-search-text hide">Tìm kiếm</div>
+                            </div>
+                            <div class="Add-guest-box hide">
+                                <div class="Guset-info-wrap">
+                                    <div class="Guset-info">
+                                        <span><strong>Người lớn</strong></span>
+
+                                        <span>Từ 13 tuổi trở lên</span>
+                                    </div>
+                                    <div class="Guset-add">
+                                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
+                                        <span class="quantily">0</span>
+                                        <i class="fas fa-plus Guset-add-icon icon-plus "></i>
+                                    </div>
+                                </div>
+                                <div class="Guset-info-wrap">
+                                    <div class="Guset-info">
+                                        <span><strong>Trẻ em</strong></span>
+
+                                        <span>Độ tuổi từ 2 đến 12</span>
+                                    </div>
+                                    <div class="Guset-add">
+                                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
+                                        <span class="quantily">0</span>
+                                        <i class="fas fa-plus Guset-add-icon icon-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="Guset-info-wrap">
+                                    <div class="Guset-info">
+                                        <span><strong>Em bé</strong></span>
+
+                                        <span>Dưới 2 tuổi</span>
+                                    </div>
+                                    <div class="Guset-add">
+                                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
+                                        <span class="quantily">0</span>
+                                        <i class="fas fa-plus Guset-add-icon icon-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="Guset-info-wrap">
+                                    <div class="Guset-info">
+                                        <span><strong>Thú cưng</strong></span>
+
+                                        <a href="#"
+                                           class="pet">Bạn muốn mang theo thú cưng ?</a>
+                                    </div>
+                                    <div class="Guset-add">
+                                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
+                                        <span class="quantily">0</span>
+                                        <i class="fas fa-plus Guset-add-icon icon-plus"></i>
+                                    </div>
+                                </div>
+                                <div class="pet-support">
+                                    <p>Nếu bạn may mắn có nhiều hơn 2 thú cưng đi cùng, hãy nhớ cho Chủ nhà biết.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience row hide">
+                        <div class="experience-location changeBackgroundColor gachphancach col l-6 ">
+                            <label for=""><strong>Địa điểm</strong></label>
+                            <br>
+                            <input type="text"
+                                   placeholder="Bạn sắp đi đâu ?"
+                                   class="location-input"
+                                   value="">
+                        </div>
+                        <div class="experience-serach-box hide ">
+                            <div class="experience-serach-box-wrap">
+                                <img src="./img/lancan.png"
+                                     alt="">
+                                <h4>Lân Cận</h4>
+                            </div>
+                        </div>
+                        <div class="Add-day changeBackgroundColor col l-6 ">
+                            <div class="Add-day-wrap">
+                                <p><strong>Ngày</strong></p>
+                                <span class="Add-guest-text Check-text">Thời điểm bạn muốn tham gia</span>
+                            </div>
+                            <div class="Sub-search">
+                                <button>
+                                    <i class="fas fa-search Sub-search-icon ">
+                                    </i>
+                                </button>
+                                <div class="Sub-search-text hide">Tìm kiếm</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="scheduled row c-0">
-                <div class="search-location changeBackgroundColor gachphancach col l-4 m-4">
-                    <label for=""><strong>Địa điểm</strong></label>
-                    <br>
-                    <input type="text" placeholder="Bạn sắp đi đâu ?" class="location-input">
-                </div>
-                <div class="flex-serach-box hide">
-                    <h4>Mọi lúc, mọi nơi</h4>
-                    <button class="flex-serach-btn">
-                        <span>Tìm kiếm linh hoạt</span>
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-                <div class="Check-in changeBackgroundColor gachphancach col l-2 m-2">
-                    <p><Strong>Nhận phòng</Strong></p>
-                    <p class="Check-text">Thêm ngày</p>
-                </div>
-                <div class="Check-out changeBackgroundColor gachphancach col l-2 m-2">
-                    <p><strong>Trả phòng</strong></p>
-                    <p class="Check-text">Thêm ngày</p>
-                </div>            
-                <div class="Add-guest changeBackgroundColor col l-4 m-4">   
-                    <div class="Add-guest-wrap">
-                        <p><strong>Khách</strong></p>                 
-                            <i class="far fa-times-circle guest-text-icon hide"></i>
-                            <div class="Add-guest-text-wrap">
-                            <span class="Add-guest-text Check-text">Thêm khách</span>
-                            <span class="adult"></span>
-                            <span class="child"></span>
-                            <span class="baby"></span>
-                            <span class="add-pet"></span>
-                             </div>                     
-                    </div>
-                <div class="Sub-search">
-                    <button>
-                        <i class="fas fa-search Sub-search-icon ">
-                        </i>
-                    </button>
-                    <div class="Sub-search-text hide">Tìm kiếm</div>
-                </div>
-                <div class="Add-guest-box hide">
-                <div class="Guset-info-wrap">
-                    <div class="Guset-info">
-                        <span><strong>Người lớn</strong></span>
-                        
-                        <span>Từ 13 tuổi trở lên</span>
-                    </div>
-                    <div class="Guset-add">
-                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
-                        <span class="quantily">0</span>
-                        <i class="fas fa-plus Guset-add-icon icon-plus "></i>
-                    </div>
-                </div>
-                <div class="Guset-info-wrap">
-                    <div class="Guset-info">
-                        <span><strong>Trẻ em</strong></span>
-                        
-                        <span>Độ tuổi từ 2 đến 12</span>
-                    </div>
-                    <div class="Guset-add">
-                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
-                        <span class="quantily">0</span>
-                        <i class="fas fa-plus Guset-add-icon icon-plus"></i>
-                    </div>
-                </div>
-                <div class="Guset-info-wrap">
-                    <div class="Guset-info">
-                        <span><strong>Em bé</strong></span>
-                        
-                        <span>Dưới 2 tuổi</span>
-                    </div>
-                    <div class="Guset-add">
-                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
-                        <span class="quantily">0</span>
-                        <i class="fas fa-plus Guset-add-icon icon-plus"></i>
-                    </div>
-                </div>
-                <div class="Guset-info-wrap">
-                    <div class="Guset-info">
-                        <span><strong>Thú cưng</strong></span>
-                        
-                        <a href="#" class="pet">Bạn muốn mang theo thú cưng ?</a>
-                    </div>
-                    <div class="Guset-add">
-                        <i class="fas fa-minus Guset-add-icon icon-minus"></i>
-                        <span class="quantily">0</span>
-                        <i class="fas fa-plus Guset-add-icon icon-plus"></i>
-                    </div>
-                </div>
-                <div class="pet-support">
-                    <p>Nếu bạn may mắn có nhiều hơn 2 thú cưng đi cùng, hãy nhớ cho Chủ nhà biết.</p>
-                </div>
-                 </div>
-            </div>
-            </div>
-            <div class="experience row hide">
-                <div class="experience-location changeBackgroundColor gachphancach col l-6 ">
-                    <label for=""><strong>Địa điểm</strong></label>
-                    <br>
-                    <input type="text" placeholder="Bạn sắp đi đâu ?" class="location-input" value="">
-                </div>
-                <div class="experience-serach-box hide ">
-                    <div class="experience-serach-box-wrap">
-                        <img src="./img/lancan.png" alt="">
-                        <h4>Lân Cận</h4>
-                    </div>
-                </div>                             
-                <div class="Add-day changeBackgroundColor col l-6 ">   
-                    <div class="Add-day-wrap">
-                        <p><strong>Ngày</strong></p>                                              
-                        <span class="Add-guest-text Check-text">Thời điểm bạn muốn tham gia</span>                                                                     
-                    </div>
-                <div class="Sub-search">
-                    <button>
-                        <i class="fas fa-search Sub-search-icon ">
-                        </i>
-                    </button>
-                    <div class="Sub-search-text hide">Tìm kiếm</div>
-                </div>
-             </div>
-            </div>
-        </div>   
-    </div>
         </div>
         <div class="flex-search-wrap">
-        <div class="flex-search " style=" background-image: url(./img/f1502649-e034-40ab-9fed-7992b7d550c6.webp)">
-            <div class="header-mobile">
-            <button class="header-btn-moblie hide">
-                <i class="fas fa-search"></i>
-                <span>Bạn sắp đi đâu ? </span>
-            </button>
-            </div>
-            <div class="nav-mobile sticky-bottom ">
-                <button class="nav-mobile-btn nav-mobile-btn-active">
-                    <i class="fas fa-search"></i>
-                    <span>Khám phá</span>
-                </button>
-                <button class="nav-mobile-btn ">
-                    <i class="far fa-heart"></i>
-                    <span>Yêu thích</span>
-                </button>
-                <button class="nav-mobile-btn  ">
-                    <i class="far fa-user-circle"></i>
-                    <span>Đăng nhập</span>
-                </button>
-            </div>
-            <div class="flex-search-content">
-                <p>Bạn chưa biết đi đâu ?</p>
-                <p>Tuyệt!</p>
-            <button>Tìm kiếm linh hoạt</button>
+            <div class="flex-search "
+                 style=" background-image: url(./img/f1502649-e034-40ab-9fed-7992b7d550c6.webp)">
+                <div class="header-mobile">
+                    <button class="header-btn-moblie hide">
+                        <i class="fas fa-search"></i>
+                        <span>Bạn sắp đi đâu ? </span>
+                    </button>
+                </div>
+                <div class="nav-mobile sticky-bottom ">
+                    <button class="nav-mobile-btn nav-mobile-btn-active">
+                        <i class="fas fa-search"></i>
+                        <span>Khám phá</span>
+                    </button>
+                    <button class="nav-mobile-btn ">
+                        <i class="far fa-heart"></i>
+                        <span>Yêu thích</span>
+                    </button>
+                    <button class="nav-mobile-btn  ">
+                        <i class="far fa-user-circle"></i>
+                        <span>Đăng nhập</span>
+                    </button>
+                </div>
+                <div class="flex-search-content">
+                    <p>Bạn chưa biết đi đâu ?</p>
+                    <p>Tuyệt!</p>
+                    <button>Tìm kiếm linh hoạt</button>
+                </div>
             </div>
         </div>
-         </div>
-         <div class="body-container">
+        <div class="body-container">
             <div class="grid wide">
-                    <div class="swiper mySwiper inspiration">
-                        <div class="inspiration-header">
-                            <h1>Cảm hứng cho chuyến đi tiếp theo của bạn</h1>
-                        </div>
-                        <div class="swiper-wrapper grid wide">
-                          <div class="swiper-slide row"> 
-                            <div class="inspiration-main col l-6 s-m-6 m-6 c-6" >
-                                <a href="" class="inspiration-wrap" style="background-color: #bc1a5e;">
-                                    <img src="./img/img (1).webp" alt="">
+                <div class="swiper mySwiper inspiration">
+                    <div class="inspiration-header">
+                        <h1>Cảm hứng cho chuyến đi tiếp theo của bạn</h1>
+                    </div>
+                    <div class="swiper-wrapper grid wide">
+                        <div class="swiper-slide row">
+                            <div class="inspiration-main col l-6 s-m-6 m-6 c-6">
+                                <a href=""
+                                   class="inspiration-wrap"
+                                   style="background-color: #bc1a5e;">
+                                    <img src="./img/img (1).webp"
+                                         alt="">
                                     <h1 class="inspiration-location">Hà Nội</h1>
                                     <p class="inspiration-distance">Cách 2km</p>
                                 </a>
-                             </div>
-                             <div class="inspiration-main col l-6 s-m-6  m-6 c-6" >
-                                <a href="" class="inspiration-wrap" style="background-color: #d93b30;">
-                                    <img src="./img/img (2).webp" alt="">
+                            </div>
+                            <div class="inspiration-main col l-6 s-m-6  m-6 c-6">
+                                <a href=""
+                                   class="inspiration-wrap"
+                                   style="background-color: #d93b30;">
+                                    <img src="./img/img (2).webp"
+                                         alt="">
                                     <h1 class="inspiration-location">Thành Phố Hạ Long</h1>
                                     <p class="inspiration-distance">Cách 124km</p>
                                 </a>
                             </div>
-                            <div class="inspiration-main col l-6 hide inspiration-main-modify " >
-                                <a href="" class="inspiration-wrap" style="background-color: #de3151;">
-                                    <img src="./img/img (3).webp" alt="">
+                            <div class="inspiration-main col l-6 hide inspiration-main-modify ">
+                                <a href=""
+                                   class="inspiration-wrap"
+                                   style="background-color: #de3151;">
+                                    <img src="./img/img (3).webp"
+                                         alt="">
                                     <h1 class="inspiration-location">Mỹ Đình</h1>
                                     <p class="inspiration-distance">Cách 8km</p>
                                 </a>
                             </div>
-                            <div class="inspiration-main col l-6 hide inspiration-main inspiration-main-modify  " >
-                                <a href="" class="inspiration-wrap" style="background-color: #cc2d4a;">                                
-                                    <img src="./img/img (4).webp" alt="">
+                            <div class="inspiration-main col l-6 hide inspiration-main inspiration-main-modify  ">
+                                <a href=""
+                                   class="inspiration-wrap"
+                                   style="background-color: #cc2d4a;">
+                                    <img src="./img/img (4).webp"
+                                         alt="">
                                     <h1 class="inspiration-location">Thành Phố Ninh Bình</h1>
                                     <p class="inspiration-distance">Cách 88km</p>
                                 </a>
                             </div>
-                         </div>
-                   
-                          <div class="swiper-slide row swiper-slide-modify"> 
-                            <div class="inspiration-main col l-6 s-m-6 m-6 c-6" >
-                                <a href="" class="inspiration-wrap" style="background-color: #de3151;">
-                                    <img src="./img/img (3).webp" alt="">
-                                    <h1 class="inspiration-location">Mỹ Đình</h1>
-                                    <p class="inspiration-distance">Cách 8km</p>
-                                </a>
-                            </div>
-                            <div class="inspiration-main col l-6 s-m-6  m-6 c-6" >
-                                <a href="" class="inspiration-wrap" style="background-color: #cc2d4a;">
-                                    <img src="./img/img (4).webp" alt="">
-                                    <h1 class="inspiration-location">Thành Phố Ninh Bình</h1>
-                                    <p class="inspiration-distance">Cách 88km</p>
-                                </a>
-                            </div>
-                        </div>                   
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+
+                        <div class="swiper-slide row swiper-slide-modify">
+                            <div class="inspiration-main col l-6 s-m-6 m-6 c-6">
+                                <a href=""
+                                   class="inspiration-wrap"
+                                   style="background-color: #de3151;">
+                                    <img src="./img/img (3).webp"
+                                         alt="">
+                                    <h1 class="inspiration-location">Mỹ Đình</h1>
+                                    <p class="inspiration-distance">Cách 8km</p>
+                                </a>
+                            </div>
+                            <div class="inspiration-main col l-6 s-m-6  m-6 c-6">
+                                <a href=""
+                                   class="inspiration-wrap"
+                                   style="background-color: #cc2d4a;">
+                                    <img src="./img/img (4).webp"
+                                         alt="">
+                                    <h1 class="inspiration-location">Thành Phố Ninh Bình</h1>
+                                    <p class="inspiration-distance">Cách 88km</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="experiences grid wide">
-                        <div class="experiences-header">
-                            <h1>Khám phá Trải nghiệm Airbnb</h1>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="experiences grid wide">
+                    <div class="experiences-header">
+                        <h1>Khám phá Trải nghiệm Airbnb</h1>
+                    </div>
+                    <div class="experiences-content row ">
+                        <div class="experiences-main-wrap col l-6 m-6 s-m-12 c-12">
+                            <div class="experiences-main"
+                                 style="background-image: url(./img/whygsmallp1.jpg)">
+                                <h2>Những điều nên trải nghiệm trong chuyến đi của bạn</h2>
+                                <button>Trải nghiệm</button>
+                            </div>
                         </div>
-                        <div class="experiences-content row ">
-                            <div class="experiences-main-wrap col l-6 m-6 s-m-12 c-12" >
-                                <div class="experiences-main" style="background-image: url(./img/whygsmallp1.jpg)">
-                                    <h2>Những điều nên trải nghiệm trong chuyến đi của bạn</h2>
-                                    <button>Trải nghiệm</button>
-                                </div>
+                        <div class="experiences-main-wrap col l-6 m-6 s-m-12 c-12">
+                            <div class="experiences-main"
+                                 style="background-image: url(./img/d1.jpg)">
+                                <h2>Những điều nên
+                                    trải nghiệm tại nhà</h2>
+                                <button>Trải nghiệm trực tuyến</button>
                             </div>
-                            <div class="experiences-main-wrap col l-6 m-6 s-m-12 c-12" >
-                                <div class="experiences-main" style="background-image: url(./img/d1.jpg)">
-                                    <h2>Những điều nên
-                                        trải nghiệm tại nhà</h2>
-                                    <button>Trải nghiệm trực tuyến</button>
-                                </div>
-                            </div>
-                            <div class="experiences-main-wrap col l-12 m-12 s-m-12 c-12" >
-                                <div class="experiences-main experiences-main-big" style="background-image: url(./img/da\ nang.jpg)">
-                                    <h2>Bạn có thắc mắc
+                        </div>
+                        <div class="experiences-main-wrap col l-12 m-12 s-m-12 c-12">
+                            <div class="experiences-main experiences-main-big"
+                                 style="background-image: url(./img/da\ nang.jpg)">
+                                <h2>Bạn có thắc mắc
                                     về việc
                                     đón tiếp khách?</h2>
-                                    <button>Hỏi ý kiến chủ nhà siêu cấp</button>
-                                </div>
+                                <button>Hỏi ý kiến chủ nhà siêu cấp</button>
                             </div>
                         </div>
                     </div>
-            </div>
-            </div>
-         <footer >
-             <div class="footer-content grid wide">
-            <div class="footer-list-wrap row ">
-                <div class="footer-main col l-3">
-                    <div class="footer-list-header">Hỗ trợ </div>
-                     <ul class="footer-list">
-                    <li class="footer-item"><a href="#">Trung tâm trợ giúp</a></li>
-                    <li class="footer-item"><a href="#">Thông tin an toàn</a></li>
-                    <li class="footer-item"><a href="#">Các tùy chọn hủy</a></li>
-                    <li class="footer-item"><a href="#">Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi</a></li>
-                    <li class="footer-item"><a href="#">Hỗ trợ người khuyết tật</a></li>
-                    <li class="footer-item"><a href="#">Báo cáo lo ngại của hàng xóm</a></li>
-                </ul>
-                   </div>
-                   <div class="footer-main col l-3">
-                <div class="footer-list-header">Cộng đồng</div>
-                 <ul class="footer-list">
-                    <li class="footer-item"><a href="#">Airbnb.org: nhà ở cứu trợ</a></li>
-                    <li class="footer-item"><a href="#">Hỗ trợ dân tị nạn Afghanistann</a></li>
-                    <li class="footer-item"><a href="#">Vì sự đa dạng và thân thuộc</a></li>
-                    <li class="footer-item"><a href="#">Chống phân biệt đối xử</a></li>    
-            </ul>
-                   </div>
-                   <div class="footer-main col l-3">
-            <div class="footer-list-header">Đón tiếp khách</div>
-             <ul class="footer-list">
-                <li class="footer-item"><a href="#">Thử đón tiếp khách</a></li>
-                <li class="footer-item"><a href="#">AirCover: bảo vệ cho Host</a></li>
-                <li class="footer-item"><a href="#">Xem tài nguyên đón tiếp khách</a></li>
-                <li class="footer-item"><a href="#">Truy cập diễn đàn cộng đồng</a></li>
-                <li class="footer-item"><a href="#">Đón tiếp khách có trách nhiệm</a></li>
-               </ul>
-                  </div>
-                  <div class="footer-main col l-3">
-              <div class="footer-list-header">Giới thiệu </div>
-                        <ul class="footer-list">
-                    <li class="footer-item"><a href="#">Trang tin tức</a></li>
-                    <li class="footer-item"><a href="#">Tìm hiểu các tính năng mới</a></li>
-                    <li class="footer-item"><a href="#">Thư ngỏ từ các nhà sáng lập</a></li>
-                    <li class="footer-item"><a href="#">Cơ hội nghề nghiệp</a></li>
-                    <li class="footer-item"><a href="#">Nhà đầu tư</a></li>
-                    <li class="footer-item"><a href="#">Airbnb Luxe</a></li>
-                        </ul>
-                 </div>       
-            </div>
-            <div class="footer-option-wrap">
-                <div class="footer-policy">
-                    <div class="footer-policy-wrap">
-                    <div class="footer-policy-item">© 2022 Airbnb, Inc.</div>
-                    <ul class="footer-policy-list">
-                        <li class="footer-policy-item"><a href="#">Quyền riêng tư</a></li>
-                        <li class="footer-policy-item"><a href="#">Điều khoản</a></li>
-                        <li class="footer-policy-item"><a href="#">Sơ đồ trang web</a></li>
-                    </ul>
-                 </div>
-                </div>
-                <div class="footer-option">
-                    <ul class="footer-option-list">
-                        <li class="footer-option-item footer-option-language">Tiếng Việt(VN)</li>
-                            <li class="footer-option-item footer-option-coin">                          
-                            USD
-                        </li>
-                        <li class="footer-option-icon"><i class="fab fa-facebook"></i></li>
-                        <li class="footer-option-icon"><i class="fab fa-twitter"></i></li>
-                        <li class="footer-option-icon"><i class="fas fa-camera"></i></li>
-                    </ul>
                 </div>
             </div>
         </div>
-        </footer>
-            </div>
-        
-
-
-<!-- ------------------------------------------------------------Modal----------------------------------------------------------------- -->
-        <div class="modal  hide">
-            <div class="modal__inner-1 hide">     
-                <div class="modal-region-and-coin">
-                    <div class="modal-region-and-coin_header">
-                        <i class="fas fa-times modal-icon-close"></i>
-                        <div class="modal-region-and-coin_option">
-                            <span class="modal-region-and-coin_option1"><span>Ngôn ngữ và khu vực</span></span>
-                            <span class="modal-region-and-coin_option2 hide-boder"><span>Loại tiền tệ</span></span>
+        <footer>
+            <div class="footer-content grid wide">
+                <div class="footer-list-wrap row ">
+                    <div class="footer-main col l-3">
+                        <div class="footer-list-header">Hỗ trợ </div>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Trung tâm trợ giúp</a></li>
+                            <li class="footer-item"><a href="#">Thông tin an toàn</a></li>
+                            <li class="footer-item"><a href="#">Các tùy chọn hủy</a></li>
+                            <li class="footer-item"><a href="#">Biện pháp ứng phó với đại dịch COVID-19 của chúng
+                                    tôi</a></li>
+                            <li class="footer-item"><a href="#">Hỗ trợ người khuyết tật</a></li>
+                            <li class="footer-item"><a href="#">Báo cáo lo ngại của hàng xóm</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-main col l-3">
+                        <div class="footer-list-header">Cộng đồng</div>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Airbnb.org: nhà ở cứu trợ</a></li>
+                            <li class="footer-item"><a href="#">Hỗ trợ dân tị nạn Afghanistann</a></li>
+                            <li class="footer-item"><a href="#">Vì sự đa dạng và thân thuộc</a></li>
+                            <li class="footer-item"><a href="#">Chống phân biệt đối xử</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-main col l-3">
+                        <div class="footer-list-header">Đón tiếp khách</div>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Thử đón tiếp khách</a></li>
+                            <li class="footer-item"><a href="#">AirCover: bảo vệ cho Host</a></li>
+                            <li class="footer-item"><a href="#">Xem tài nguyên đón tiếp khách</a></li>
+                            <li class="footer-item"><a href="#">Truy cập diễn đàn cộng đồng</a></li>
+                            <li class="footer-item"><a href="#">Đón tiếp khách có trách nhiệm</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-main col l-3">
+                        <div class="footer-list-header">Giới thiệu </div>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#">Trang tin tức</a></li>
+                            <li class="footer-item"><a href="#">Tìm hiểu các tính năng mới</a></li>
+                            <li class="footer-item"><a href="#">Thư ngỏ từ các nhà sáng lập</a></li>
+                            <li class="footer-item"><a href="#">Cơ hội nghề nghiệp</a></li>
+                            <li class="footer-item"><a href="#">Nhà đầu tư</a></li>
+                            <li class="footer-item"><a href="#">Airbnb Luxe</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-option-wrap">
+                    <div class="footer-policy">
+                        <div class="footer-policy-wrap">
+                            <div class="footer-policy-item">© 2022 Airbnb, Inc.</div>
+                            <ul class="footer-policy-list">
+                                <li class="footer-policy-item"><a href="#">Quyền riêng tư</a></li>
+                                <li class="footer-policy-item"><a href="#">Điều khoản</a></li>
+                                <li class="footer-policy-item"><a href="#">Sơ đồ trang web</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="modal-region-and-coin-body">
-                        <div class="modal-region">
-                      <div class="Auto-translate">
-                          <div class="Auto-translate-text">
-                            <div class="Auto-translate-text-header">
-                                <span>Bản dịch
-                                    <i class="fas fa-language"></i>
-                                </span>
-                                <span>Dịch tự động nội dung mô tả và đánh giá sang Tiếng Việt. </span>
+                    <div class="footer-option">
+                        <ul class="footer-option-list">
+                            <li class="footer-option-item footer-option-language">Tiếng Việt(VN)</li>
+                            <li class="footer-option-item footer-option-coin">
+                                USD
+                            </li>
+                            <li class="footer-option-icon"><i class="fab fa-facebook"></i></li>
+                            <li class="footer-option-icon"><i class="fab fa-twitter"></i></li>
+                            <li class="footer-option-icon"><i class="fas fa-camera"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------Modal----------------------------------------------------------------- -->
+    <div class="modal  hide">
+        <div class="modal__inner-1 hide">
+            <div class="modal-region-and-coin">
+                <div class="modal-region-and-coin_header">
+                    <i class="fas fa-times modal-icon-close"></i>
+                    <div class="modal-region-and-coin_option">
+                        <span class="modal-region-and-coin_option1"><span>Ngôn ngữ và khu vực</span></span>
+                        <span class="modal-region-and-coin_option2 hide-boder"><span>Loại tiền tệ</span></span>
+                    </div>
+                </div>
+                <div class="modal-region-and-coin-body">
+                    <div class="modal-region">
+                        <div class="Auto-translate">
+                            <div class="Auto-translate-text">
+                                <div class="Auto-translate-text-header">
+                                    <span>Bản dịch
+                                        <i class="fas fa-language"></i>
+                                    </span>
+                                    <span>Dịch tự động nội dung mô tả và đánh giá sang Tiếng Việt. </span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="Auto-translate-btn">
-                              <div class=" Auto-translate-btn-icon">
-                                  <i class="fas fa-check "></i>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="Language-suggets grid wide ">
-                             <div class="Language-header">
-                              <h2>Ngôn ngữ và khu vực được đề xuất</h2>
+                            <div class="Auto-translate-btn">
+                                <div class=" Auto-translate-btn-icon">
+                                    <i class="fas fa-check "></i>
+                                </div>
                             </div>
-                              <ul class="Language-list row no-gutter">
-                                  <li class="Language-item l-2-4 l-3 m-4 c-6">
-                                      <p>Francais</p>
-                                      <p>France</p>
-                                  </li>
-                                  <li class="Language-item l-2-4 l-3 m-4 c-6">
+                        </div>
+                        <div class="Language-suggets grid wide ">
+                            <div class="Language-header">
+                                <h2>Ngôn ngữ và khu vực được đề xuất</h2>
+                            </div>
+                            <ul class="Language-list row no-gutter">
+                                <li class="Language-item l-2-4 l-3 m-4 c-6">
                                     <p>Francais</p>
                                     <p>France</p>
                                 </li>
@@ -425,141 +478,145 @@
                                     <p>Francais</p>
                                     <p>France</p>
                                 </li>
-                              </ul>
-                              
-                          
-                      </div>
-                      <div class="Select-language grid wide ">
-                        <div class="Language-header">
-                            <h2>Chọn ngôn ngữ và khu vực</h2>
-                          </div>
+                                <li class="Language-item l-2-4 l-3 m-4 c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                        <div class="Select-language grid wide ">
+                            <div class="Language-header">
+                                <h2>Chọn ngôn ngữ và khu vực</h2>
+                            </div>
                             <ul class="Language-list row ">
                                 <li class="Language-item  col l-2-4  l-3 m-4  c-6">
                                     <p>Francais</p>
                                     <p>France</p>
                                 </li>
                                 <li class="Language-item  col l-2-4  l-3 m-4  c-6">
-                                  <p>Francais</p>
-                                  <p>France</p>
-                              </li>
-                              <li class="Language-item  col l-2-4  l-3 m-4 c-6">
-                                  <p>Francais</p>
-                                  <p>France</p>
-                              </li>
-                              <li class="Language-item  col l-2-4  l-3 m-4 c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
-                            <li class="Language-item  col l-2-4 l-3 m-4  c-6">
-                                <p>Francais</p>
-                                <p>France</p>
-                            </li>
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4  l-3 m-4 c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4  l-3 m-4 c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
+                                <li class="Language-item  col l-2-4 l-3 m-4  c-6">
+                                    <p>Francais</p>
+                                    <p>France</p>
+                                </li>
 
                             </ul>
-                      </div>
-                     </div>
-                     <div class="modal-coin hide">
+                        </div>
+                    </div>
+                    <div class="modal-coin hide">
                         <div class="Select-coin grid wide ">
                             <div class="Coin-header">
                                 <h2>Chọn loại tiền tệ</h2>
-                              </div>
-                                <ul class="Coin-list row ">                                                                                                           
+                            </div>
+                            <ul class="Coin-list row ">
                                 <li class="Coin-item  col l-2-4 l-3 m-4  c-6">
                                     <p>Francais</p>
                                     <p>France</p>
@@ -612,188 +669,225 @@
                                     <p>Francais</p>
                                     <p>France</p>
                                 </li>
-    
-                                </ul>
-                          </div>
-                     </div>
+
+                            </ul>
+                        </div>
                     </div>
-                 
-                </div>     
+                </div>
+
             </div>
-            <div class="modal__inner-2 hide ">
-                <div class="modal-login-regist ">
-                    <i class="fas fa-times modal-icon-close-2"></i>
-                    <div class="modal-login-regist__header">
-                        <h2>Đăng nhập hoặc đăng ký</h2>
-                    </div>
-                    <div class="modal-login-regist__body" >
-                        <form class="modal-regist" id="form-1">
-                            <h2 class="modal-regist__header">Chào mừng bạn đến với Airbnb</h2>
-                          <div class="regist-nation form-group">
-                              <div class="regist-nation-wrap">
-                                  <label for="nation">Quốc gia/Khu Vực</label>
-                                  <select name="nation" class="nation">
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>      
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>                       
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
-                                <option value="USA">Hoa Kỳ (+1)</option>
-                                <option value="VN">Việt Nam(+84)</option>
-                                <option value="UK">Vương Quốc Anh (+44)</option>   
+        </div>
+        <div class="modal__inner-2 hide ">
+            <div class="modal-login-regist ">
+                <i class="fas fa-times modal-icon-close-2"></i>
+                <div class="modal-login-regist__header">
+                    <h2>Đăng nhập hoặc đăng ký</h2>
+                </div>
+                <div class="modal-login-regist__body">
+                    <form class="modal-regist"
+                          id="form-1">
+                        <h2 class="modal-regist__header">Chào mừng bạn đến với Airbnb</h2>
+                        <div class="regist-nation form-group">
+                            <div class="regist-nation-wrap">
+                                <label for="nation">Quốc gia/Khu Vực</label>
+                                <select name="nation"
+                                        class="nation">
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
+                                    <option value="USA">Hoa Kỳ (+1)</option>
+                                    <option value="VN">Việt Nam(+84)</option>
+                                    <option value="UK">Vương Quốc Anh (+44)</option>
 
                                 </select>
-                                </div>
-                                <div class="regist-icon">
-                                    <i class="fas fa-angle-down"></i>
-                                </div>
                             </div>
-                            <div class="regist-phoneNumber-form form-group">
-                                <div class="regist-phoneNumber-text">Số điện thoại</div>
-                                <div class="regist-phoneNumber hide">
-                                    <div class="number-1">+84</div>
-                                    <input name="phoneInputphoneNumber" placeholder="(XXX) XXX-XXXX" aria-required="true"  class="regist-numberPhone" id="phone-number"
-                                    autocomplete="tel-national" inputmode="tel" type="tel" value="">
-                                </div>
-                                <span class="form-message"></span>
+                            <div class="regist-icon">
+                                <i class="fas fa-angle-down"></i>
                             </div>
-                            <div class="regist-policy">
-                                <p>Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại. Có áp dụng phí dữ liệu và phí tin nhắn tiêu chuẩn.
-                                    <a href="#" class="policy-link">Chính sách về quyền riêng tư</a> </p>
+                        </div>
+                        <div class="regist-phoneNumber-form form-group">
+                            <div class="regist-phoneNumber-text">Số điện thoại</div>
+                            <div class="regist-phoneNumber hide">
+                                <div class="number-1">+84</div>
+                                <input name="phoneInputphoneNumber"
+                                       placeholder="(XXX) XXX-XXXX"
+                                       aria-required="true"
+                                       class="regist-numberPhone"
+                                       id="phone-number"
+                                       autocomplete="tel-national"
+                                       inputmode="tel"
+                                       type="tel"
+                                       value="">
                             </div>
-                            <button class="regist-btn">
-                                Tiếp tục
-                            </button>
-                        </form>
-                        <div class="Daiphancach">hoặc</div>
-                        <button class="login-btn">
-                            <i class="fab fa-facebook icon-fb"></i>
-                          <span>Tiếp tục với Facebook  </span>   
+                            <span class="form-message"></span>
+                        </div>
+                        <div class="regist-policy">
+                            <p>Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại. Có áp dụng phí dữ
+                                liệu và phí tin nhắn tiêu chuẩn.
+                                <a href="#"
+                                   class="policy-link">Chính sách về quyền riêng tư</a> </p>
+                        </div>
+                        <button class="regist-btn">
+                            Tiếp tục
                         </button>
-                        <button class="login-btn">
-                            <i class="fab fa-google icon-gg"></i>
-                          <span>Tiếp tục với Google  </span>   
-                        </button>
-                        <button class="login-btn">
-                            <i class="fab fa-apple icon-apple"></i>
-                          <span>Tiếp tục với Apple </span>   
-                        </button>
-                        <button class="login-btn">
-                            <i class="fas fa-envelope icon-email"></i>
-                          <span>Tiếp tục với Email </span>   
-                        </button>
-                       <a href="#" class="Need-help">Need Help ?</a>
-                    </div>
+                    </form>
+                    <div class="Daiphancach">hoặc</div>
+                    <button class="login-btn">
+                        <i class="fab fa-facebook icon-fb"></i>
+                        <span>Tiếp tục với Facebook </span>
+                    </button>
+                    <button class="login-btn">
+                        <i class="fab fa-google icon-gg"></i>
+                        <span>Tiếp tục với Google </span>
+                    </button>
+                    <button class="login-btn">
+                        <i class="fab fa-apple icon-apple"></i>
+                        <span>Tiếp tục với Apple </span>
+                    </button>
+                    <button class="login-btn">
+                        <i class="fas fa-envelope icon-email"></i>
+                        <span>Tiếp tục với Email </span>
+                    </button>
+                    <a href="#"
+                       class="Need-help">Need Help ?</a>
                 </div>
             </div>
         </div>
-         <div class="modal-mobile hide">
-            <div class="flex-search-input-wrap">
-                <i class="fas fa-chevron-left cancel-flex-search "></i>
-                <input type="text" placeholder="Bạn sẽ đi đâu ?" class='flex-search-input'>
+    </div>
+    <div class="modal-mobile hide">
+        <div class="flex-search-input-wrap">
+            <i class="fas fa-chevron-left cancel-flex-search "></i>
+            <input type="text"
+                   placeholder="Bạn sẽ đi đâu ?"
+                   class='flex-search-input'>
+        </div>
+        <div class="flex-search-box-2 ">
+            <h4>Mọi lúc, mọi nơi</h4>
+            <button class="flex-search-box-2-btn">
+                <span>Tìm kiếm linh hoạt</span>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <div class="favor-mobile hide">
+        <div class="favor-mobile-wrap">
+            <div class="favor-mobile-header">
+                <h1>Yêu thích</h1>
+                <button><a href="#"
+                       class="favor-logion-btn">Đăng nhập</a></button>
             </div>
-            <div class="flex-search-box-2 ">
-                <h4>Mọi lúc, mọi nơi</h4>
-                <button class="flex-search-box-2-btn">
-                    <span>Tìm kiếm linh hoạt</span>
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-         </div>
-         <div class="favor-mobile hide">
-             <div class="favor-mobile-wrap">
-             <div class="favor-mobile-header">
-                 <h1>Yêu thích</h1>
-                <button><a href="#" class="favor-logion-btn">Đăng nhập</a></button>
-             </div>
-             <div class="favor-list-wrap">
-                 <h1> <strong>Danh sách Yêu thích được ưa chuộng</strong></h1>
+            <div class="favor-list-wrap">
+                <h1> <strong>Danh sách Yêu thích được ưa chuộng</strong></h1>
                 <ul class="favor-list">
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor1.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor1.webp"
+                                 alt="">
                             <span>Eye of London</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor2.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor2.webp"
+                                 alt="">
                             <span>Grape Expectations</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor3.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor3.webp"
+                                 alt="">
                             <span>Cotages</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor4.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor4.webp"
+                                 alt="">
                             <span>A cave of one's own</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor5.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor5.webp"
+                                 alt="">
                             <span>La La Land</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor6.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor6.webp"
+                                 alt="">
                             <span>Trulli in Italy</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor7.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor7.webp"
+                                 alt="">
                             <span>Hidden gems</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor8.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor8.webp"
+                                 alt="">
                             <span>Smells Like Eames Spirit</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor9.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor9.webp"
+                                 alt="">
                             <span>Domo Arigato</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor10.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor10.webp"
+                                 alt="">
                             <span>Cabin fever</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor11.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor11.webp"
+                                 alt="">
                             <span>Welcome to Miami</span>
                         </a>
                     </li>
@@ -801,68 +895,90 @@
                 </ul>
                 <ul class="favor-list-extra favor-list hide">
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor1.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor1.webp"
+                                 alt="">
                             <span>Eye of London</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor2.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor2.webp"
+                                 alt="">
                             <span>Grape Expectations</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor3.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor3.webp"
+                                 alt="">
                             <span>Cotages</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor4.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor4.webp"
+                                 alt="">
                             <span>A cave of one's own</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor5.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor5.webp"
+                                 alt="">
                             <span>La La Land</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor6.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor6.webp"
+                                 alt="">
                             <span>Trulli in Italy</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor7.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor7.webp"
+                                 alt="">
                             <span>Hidden gems</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor8.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor8.webp"
+                                 alt="">
                             <span>Smells Like Eames Spirit</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor9.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor9.webp"
+                                 alt="">
                             <span>Domo Arigato</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor10.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor10.webp"
+                                 alt="">
                             <span>Cabin fever</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor11.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor11.webp"
+                                 alt="">
                             <span>Welcome to Miami</span>
                         </a>
                     </li>
@@ -870,68 +986,90 @@
                 </ul>
                 <ul class="favor-list-extra favor-list hide">
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor1.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor1.webp"
+                                 alt="">
                             <span>Eye of London</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor2.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor2.webp"
+                                 alt="">
                             <span>Grape Expectations</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor3.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor3.webp"
+                                 alt="">
                             <span>Cotages</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor4.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor4.webp"
+                                 alt="">
                             <span>A cave of one's own</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor5.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor5.webp"
+                                 alt="">
                             <span>La La Land</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor6.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor6.webp"
+                                 alt="">
                             <span>Trulli in Italy</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor7.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor7.webp"
+                                 alt="">
                             <span>Hidden gems</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor8.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor8.webp"
+                                 alt="">
                             <span>Smells Like Eames Spirit</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor9.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor9.webp"
+                                 alt="">
                             <span>Domo Arigato</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor10.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor10.webp"
+                                 alt="">
                             <span>Cabin fever</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor11.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor11.webp"
+                                 alt="">
                             <span>Welcome to Miami</span>
                         </a>
                     </li>
@@ -939,68 +1077,90 @@
                 </ul>
                 <ul class="favor-list-extra favor-list hide">
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor1.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor1.webp"
+                                 alt="">
                             <span>Eye of London</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor2.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor2.webp"
+                                 alt="">
                             <span>Grape Expectations</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor3.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor3.webp"
+                                 alt="">
                             <span>Cotages</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor4.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor4.webp"
+                                 alt="">
                             <span>A cave of one's own</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor5.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor5.webp"
+                                 alt="">
                             <span>La La Land</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor6.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor6.webp"
+                                 alt="">
                             <span>Trulli in Italy</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor7.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor7.webp"
+                                 alt="">
                             <span>Hidden gems</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor8.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor8.webp"
+                                 alt="">
                             <span>Smells Like Eames Spirit</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor9.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor9.webp"
+                                 alt="">
                             <span>Domo Arigato</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor10.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor10.webp"
+                                 alt="">
                             <span>Cabin fever</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor11.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor11.webp"
+                                 alt="">
                             <span>Welcome to Miami</span>
                         </a>
                     </li>
@@ -1008,68 +1168,90 @@
                 </ul>
                 <ul class="favor-list-extra favor-list hide">
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor1.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor1.webp"
+                                 alt="">
                             <span>Eye of London</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor2.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor2.webp"
+                                 alt="">
                             <span>Grape Expectations</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor3.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor3.webp"
+                                 alt="">
                             <span>Cotages</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor4.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor4.webp"
+                                 alt="">
                             <span>A cave of one's own</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor5.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor5.webp"
+                                 alt="">
                             <span>La La Land</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor6.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor6.webp"
+                                 alt="">
                             <span>Trulli in Italy</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor7.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor7.webp"
+                                 alt="">
                             <span>Hidden gems</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor8.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor8.webp"
+                                 alt="">
                             <span>Smells Like Eames Spirit</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor9.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor9.webp"
+                                 alt="">
                             <span>Domo Arigato</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor10.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor10.webp"
+                                 alt="">
                             <span>Cabin fever</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor11.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor11.webp"
+                                 alt="">
                             <span>Welcome to Miami</span>
                         </a>
                     </li>
@@ -1077,46 +1259,50 @@
                 </ul>
                 <ul class="favor-list-extra favor-list hide">
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor1.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor1.webp"
+                                 alt="">
                             <span>Eye of London</span>
                         </a>
                     </li>
                     <li class="favor-item">
-                        <a href="#" class='favor-item-link'>
-                            <img src="./img/favor2.webp" alt="">
+                        <a href="#"
+                           class='favor-item-link'>
+                            <img src="./img/favor2.webp"
+                                 alt="">
                             <span>Grape Expectations</span>
                         </a>
                     </li>
                 </ul>
-             </div>
             </div>
-         </div>
+        </div>
+    </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>       
-            var swiper = new Swiper(".mySwiper", {
-              navigation: {
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-              },
-            });
-        
+            },
+        });
     </script>
 </body>
-    <script src="./Js/main.js"></script>
-    <script>
-        validator({
-          form: '#form-1',
-          formGroupSelector: '.form-group',
-          errorMessage: '.form-message',
-          rules: [
+<script src="./Js/main.js"></script>
+<script>
+    validator({
+        form: '#form-1',
+        formGroupSelector: '.form-group',
+        errorMessage: '.form-message',
+        rules: [
             validator.isRequired('#phone-number'),
-            validator.minLength('#phone-number',10),
-          ],
-          onSubmit: function(data){
+            validator.minLength('#phone-number', 10),
+        ],
+        onSubmit: function (data) {
             console.log(data);
-          }
-        })
-      </script>
+        }
+    })
+</script>
+
 </html>
